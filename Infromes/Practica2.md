@@ -79,7 +79,7 @@ Volver al [INICIO](#laboratorio-de-comunicaciones)
 ![Networking](my%20file/test.png)
 
 ### Imagen de fuente externa
-![GNU Radio logo](https://kb.ettus.com/images/thumb/5/50/gnuradio.png/600px-gnuradio.png)
+![GNU Radio logo](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20sin%20ruido.jpg)
 
 ### Uso de html para cambiar escala de la imagen
 <img src="https://kb.ettus.com/images/thumb/5/50/gnuradio.png/600px-gnuradio.png" alt="GNU Radio Logo" width="300">
