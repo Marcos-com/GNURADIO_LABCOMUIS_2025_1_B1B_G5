@@ -31,7 +31,13 @@ En esta práctica, analizamos y aprendimos cómo la calidad de una señal puede 
 Además, analizamos la relación señal a ruido para determinar qué componente predomina en cada canal. Finalmente, comparamos los diferentes tipos de canales para evaluar cuál es más eficiente en la transmisión de datos y cuál mantiene la mejor calidad de la señal.
 
 ### Introducción
-
+- ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
+- ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
+- ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
+- ¿Qué ocurre al eliminar armónicos de una señal?
+- ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
+- ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
+- ¿Cómo se puede mejorar la relación señal a ruido en una señal?
 
 ### Procedimiento
 Debe basarse en las acciones efectivamente realizadas durante el laboratorio, describiendo los procesos realizados y los resultados obtenidos. Para cada práctica se pueden brindar preguntas orientadoras o pasos a seguir para establecer lo que se espera lograr/estudiar/analizar/obtener/comparar. Por ejemplo:
