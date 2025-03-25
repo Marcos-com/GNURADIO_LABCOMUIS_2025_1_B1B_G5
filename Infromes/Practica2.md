@@ -32,22 +32,56 @@ Además, analizamos la relación señal a ruido para determinar qué componente 
 
 ### Introducción
 - ¿Cuál es el efecto de filtrar las frecuencias altas de una señal?
+
+  Cuando nosotros eliminamos las frecuencias altas de una señal lo que estamos provocando es eliminando los armonicos de la señal lo que provocaria que se queden solo el fundamental y la señal se convierte en una onda senoidal.
 - ¿Qué sucede al filtrar muy cerca de la frecuencia fundamental de la señal?
+
+  Al filtar cerca de la frecuencia fundamental la señal de salida podria presentar o comportarse como una señal ruidosa, y si eliminamos por completo todos los armonicos y el fundamental eliminariamos la señal completa.
 - ¿Cuál es el efecto de filtrar las frecuencias bajas de una señal?
+
+  El efecto que provocaria eliminar las frecuencias bajas puede provocar discontinuidad en la señal esto se puede ver como picos o pulsos, generando cambios rapidos en la señal.
 - ¿Qué ocurre al eliminar armónicos de una señal?
+
+  Cuando eliminamos los armonicos de la señal es decir el fundamental y todos los demas lo que provocamos es eliminar o atenuar la señal, lo que provocaria perdida total de la señal.
 - ¿Qué efecto tiene la desviación de frecuencia en la señal recibida? ¿Qué efecto(s) produce el filtro cuando la señal recibida se ve afectada por desviación de frecuencia?
+
+  Cuando recibimos la señal con una desviacion de frecuencia esto puede provocar que el receptor pueda sintonixar o leer mal la señal, tamien puede llegar el caso de perderla, y cuando pasa por un filtro va depender del filtrado que se aplique puede provocar diferentes tipos de consecuencias.
 - ¿Cómo cuantificar la degradación de la señal al aumentar los niveles de ruido?
+
+  Para cuantificar la señal, para ver que tanto afecta el ruido, dedemos irnos a la relacion señal a ruido, esta no podra decir que tanto afecta la potencia del ruido a la potencia de la señal, cuando esta es alta podemos obtener una mejor calidad de señal, pero cuando esta es baja, quiere decir que la potencia del ruido es mucho mas alta, y no tendra mucha calidad la señal.
 - ¿Cómo se puede mejorar la relación señal a ruido en una señal?
 
+  Para mejorar la relacion señal a ruido, hay muchos metodos, uno de ellos pude ser aumentando la potencia de la señal y disminuyendo la potencia del ruido, esto provocaria una mejor calidad de la señal.
+
 ### Procedimiento
-Debe basarse en las acciones efectivamente realizadas durante el laboratorio, describiendo los procesos realizados y los resultados obtenidos. Para cada práctica se pueden brindar preguntas orientadoras o pasos a seguir para establecer lo que se espera lograr/estudiar/analizar/obtener/comparar. Por ejemplo:
-- Describa los procesos realizados en el laboratorio  y los resultados obtenidos.
-- ¿Cómo se alcanza el límite de Nyquist y que pasa cuando se disminuye de este?
-- ¿Por qué al interpolar una señal en GNURADIO su frecuencia disminuye?
-- ¿Por qué al diezmar una señal en GNURADIO su frecuencia aumenta?
-- ¿Cómo se puede determinar la frecuencia máxima de una señal desde lo experimental?
-- ¿Qué le sucede a una señal de audio cuando no se respeta el teorema de Nyquist?
-- Describa las funciones logradas con el Ecualizador desarrollado con GNURadio.
+Ahora vamos a dar seguimiento a las actividades 2 y 3, es cuando veremos en la parte experimental de como podemos notar tanto en el osciloscopio y en el analixador de espectro los efectos de canal. Resolviendo las siguintes preguntas orientadoras:
+
+- ¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?
+  El efecto que provoca el ruido a la amplitud de la señal se puede ver un aumento considerable ya como nos muestra los cursores del osciloscopio. como se puede ver a continuacion.
+  ![Señal sin ruido](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20sin%20ruido.jpg)
+  ![Señal con ruido](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20con%20ruido.jpg)  
+- ¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?
+
+  Aumenta esto podemos nortarlo, ya que cada vez que que nosotros variamos el ruido, podemos ver que la relacion señal a ruido aumenta ya que la señal va perdiendo calidad como se muestra en la siguiente imagen con diferentes niveles de ruido de 0.03 y de 0.09.
+  ![Señal con ruido de 0.03](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20con%200.3%20de%20ruido.jpg)
+  ![Señal con ruido de 0.09](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20con%200.09%20de%20ruido.jpg)  
+- Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?
+
+  Una forma de mejorr la relacion señal a ruido es mejorar o aumental la potencia del trasmisor, esto provocaria que la relacion señal a ruido aumentara y asi mismo su calidad, o buscando un cable que no tenga tanta atenuacion.
+- ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda.
+  Para ver la desviacion de frecuencia podemos notarlo mediante la frecuencias, ya que esta se desfasaria y y pierde la frecuencia que originalmente tendria como se puede ver en las siguientes imagenes.
+  ![Señal sin desviacion](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/sin%20desviasion.jpg)
+  ![Señal con desviacion](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/con%20desviacion.jpg)
+- Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
+
+  Usar los cables largos (coaxiales) esto porvoca que pueda ver mas atenuacion de la señal y se puede notar en el osciloscopio, ya que vemos la señal, mas pequeña, como se muestra en la imagen.
+  ![Señal con cable coaxial](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/cable%20coaxial.jpg)
+- Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
+
+  La distancia afecta muy considerablemente la amplitud de la señal ya que esta puede propagarse en el aire o objetos que se encuentran en el medio puede que pierda energia. lo podemos ver en la siguientes imagenes.
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/con%20antenas%20juntas.jpg)
+  ![Señal con antenas separadas](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/antenas%20repadas.jpg)
+- ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
 
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
