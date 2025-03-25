@@ -58,31 +58,87 @@ Ahora vamos a dar seguimiento a las actividades 2 y 3, es cuando veremos en la p
 
 - ¿Cuál es el efecto del ruido sobre la amplitud de las señales medidas en el osciloscopio? ¿Conservan las mismas relaciones que se evidencian en la simulación?
   El efecto que provoca el ruido a la amplitud de la señal se puede ver un aumento considerable ya como nos muestra los cursores del osciloscopio. como se puede ver a continuacion.
+  SEÑAL SIN RUIDO
   ![Señal sin ruido](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20sin%20ruido.jpg)
+  SEÑAL CON RUIDO
   ![Señal con ruido](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20con%20ruido.jpg)  
 - ¿La relación señal a ruido creada intencionalmente en el computador se amplifica o se reduce en la señal observada en el osciloscopio?
 
   Aumenta esto podemos nortarlo, ya que cada vez que que nosotros variamos el ruido, podemos ver que la relacion señal a ruido aumenta ya que la señal va perdiendo calidad como se muestra en la siguiente imagen con diferentes niveles de ruido de 0.03 y de 0.09.
+  SEÑAL CON RUIDO DE 0.03
   ![Señal con ruido de 0.03](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20con%200.3%20de%20ruido.jpg)
+  SEÑAL CON RUIDO DE 0.09
   ![Señal con ruido de 0.09](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/Se%C3%B1al%20con%200.09%20de%20ruido.jpg)  
 - Demuestre ¿cómo se puede mejorar la relación señal a ruido en una señal?
 
   Una forma de mejorr la relacion señal a ruido es mejorar o aumental la potencia del trasmisor, esto provocaria que la relacion señal a ruido aumentara y asi mismo su calidad, o buscando un cable que no tenga tanta atenuacion.
 - ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el osciloscopio? Evidenciar al menos con dos formas de onda.
   Para ver la desviacion de frecuencia podemos notarlo mediante la frecuencias, ya que esta se desfasaria y y pierde la frecuencia que originalmente tendria como se puede ver en las siguientes imagenes.
+  SEÑAL SIN DESVIACION
   ![Señal sin desviacion](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/sin%20desviasion.jpg)
+  SEÑAL CON DESVIACION
   ![Señal con desviacion](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/con%20desviacion.jpg)
 - Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
 
   Usar los cables largos (coaxiales) esto porvoca que pueda ver mas atenuacion de la señal y se puede notar en el osciloscopio, ya que vemos la señal, mas pequeña, como se muestra en la imagen.
+  CON CABLE COAXIAL
   ![Señal con cable coaxial](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/cable%20coaxial.jpg)
 - Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
 
   La distancia afecta muy considerablemente la amplitud de la señal ya que esta puede propagarse en el aire o objetos que se encuentran en el medio puede que pierda energia. lo podemos ver en la siguientes imagenes.
+  SEÑAL CON ANTENAS JUNTAS
   ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/con%20antenas%20juntas.jpg)
+  SEÑAL CON ANTENAS SEPARADAS
   ![Señal con antenas separadas](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2B/antenas%20repadas.jpg)
 - ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
 
+  El mejor canal es el cable corto, ya que no presenta tantas atenuaciones como los otros canales por ejemplo el cable coaxial su largor puede que presente mas atenuacion, las antenas pueden pueden perder energia ya que el ambiente y algunos objetos pueden hacer interferir.
+
+Ahora veremos las preguntas orientadoras de la actividad 3 y sus observaciones:
+- ¿Cuál es el efecto del ruido sobre la respuesta en frecuencia de las señales medidas en el analizador de espectro? ¿Conservan las mismas relaciones que se evidencian en la simulación?
+  El efecto mas evidente es el piso de ruido aumenta o disminuye dependiendo de cuanto ruido mandamos, se pude notar mucho mejor en las imagenes y podemos ver que la comparacion entre la simulacion y lo real mantienen un margen de error muy pequeño esto puede ser por como esta configurado el analizador de espectros.
+  SIMULACION
+    ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/con%20ruido.jpg)
+  ANALIZADOR DE ESPECTROS
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20con%20ruido.jpg)
+  Podemos ver la diferencia de las señales sin ruido que tienen un ruidode piso muy bajo.
+  SIMULACION SIN RUIDO
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/sin%20ruido.jpg)
+  ANALIZADOR DE ESPECTROS SIN RUIDO
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20sin%20ruido.jpg)
+- ¿La relación señal a ruido creada intencionalmente desde el computador se amplifica o se reduce en la señal observada en el analizador de espectro?
+
+  Podemos ver que el ruido creado por el computador se amplifica  cuando nosotros subimos o aumentamos el ruido, podemos verlo como el piso de ruido aumenta en el analizador de espectros y comparando con la señal sin ruido de cada señal.
+    SIMULACION SIN RUIDO(ONDA SENO)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/sin%20ruido.jpg)
+  ANALIZADOR DE ESPECTROS SIN RUIDO(ONDA SENO)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20sin%20ruido.jpg)
+  SIMULACION SIN RUIDO(ONDA CUADRADA)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/se%C3%B1al%20cuadrada.jpg)
+  ANALIZADOR DE ESPECTROS SIN RUIDO(ONDA CUADRADA)
+  ![Señal con antenas cerca](http://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20con%20una%20cuadra.jpg)
+  Aplicamos varios valores de ruido para ver si el analizador de espectro se puede notar los diferentes tipos niveles de ruido.
+  
+    SIMULACION CON RUIDO DE 0.8(ONDA SENO)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/con%20ruido%20de%200.8.jpg)
+  ANALIZADOR DE ESPECTROS CON RUIDO DE 0.8(ONDA SENO)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20con%20ruido%20de%200.8.jpg)
+    SIMULACION CON RUIDO DE 0.16(ONDA SENO)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/con%20ruido%20de%200.16.jpg)
+  ANALIZADOR DE ESPECTROS CON RUIDO DE 0.16(ONDA SENO)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20con%20ruido%20de%200.16.jpg)
+  SIMULACION CON RUIDO DE 0.4(ONDA CUADRADA)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/cuadrada%20con%20ruido%20de%200.4.jpg)
+  ANALIZADOR DE ESPECTROS CON RUIDO DE 0.4(ONDA CUADRADA)
+  ![Señal con antenas cerca](https://github.com/Marcos-com/GNURADIO_LABCOMUIS_2025_1_B1B_G5/blob/main/Practica_2/Practica_2C/espectro%20de%20cuadrada%20con%20ruido%20de%200.4.jpg)
+- ¿Cómo se evidencia el fenómeno de desviación de frecuencia en el analizador de espectro? Evidenciar al menos con dos formas de onda.
+
+  Para evidenciar la desviacion de frecuencia podemos ver que la frecuencia central se desplaza, y podemos verlo tanto en la simulacion como en el analizador de espectros.
+  
+- Determine la afectación de un medio de transmisión coaxial (usar cables largos) sobre una señal periódica operando a las capacidades máximas de muestreo del USRP.
+- Usando cables coaxiales de diferentes longitudes, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida?
+- Usando antenas, ¿cómo afecta la distancia entre el transmisor y el receptor a la amplitud de la señal medida? ¿Es posible compensar el fenómeno?
+- ¿Qué modelo de canal básico describe mejor las mediciones obtenidas en la práctica?
 ### Conclusiones
 Se sintetizan los principales aportes y puntos relevantes de la práctica, evitando repetir lo ya consignado en las otras secciones del informe. 
 
